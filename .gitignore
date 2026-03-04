@@ -59,5 +59,5 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 
-# Allure (default: GenpactAutomation/bin/Debug/net7.0/allure-results)
+# Allure (default: PlaywrightWikipediaAutomation/bin/Debug/net7.0/allure-results)
 allure-report/
