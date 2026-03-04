@@ -36,14 +36,14 @@ jobs:
 
       - name: Run Playwright tests
         run: xvfb-run dotnet test --no-restore --no-build
-        # Allure.NUnit writes to PlaywrightWikipediaAutomation/bin/Debug/net7.0/allure-results/
+        # Allure.NUnit writes to PlaywrightWikipediaAutomation/bin/Debug/net10.0/allure-results/
 
       - name: Upload Allure results
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: allure-results
-          path: PlaywrightWikipediaAutomation/bin/Debug/net7.0/allure-results/
+          path: PlaywrightWikipediaAutomation/bin/Debug/net10.0/allure-results/
           retention-days: 3
 
   deploy-report:
